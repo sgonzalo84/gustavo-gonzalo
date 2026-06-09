@@ -1,0 +1,134 @@
+@import "tailwindcss";
+
+@theme {
+  /* ── Colores ── */
+  --color-secondary: #006a6a;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #98eeee;
+  --color-on-secondary-container: #006e6e;
+  --color-secondary-fixed: #9bf1f1;
+  --color-secondary-fixed-dim: #7ed5d4;
+  --color-on-secondary-fixed: #002020;
+  --color-on-secondary-fixed-variant: #004f50;
+
+  --color-primary: #5d5f5f;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #ffffff;
+  --color-on-primary-container: #747676;
+  --color-primary-fixed: #e2e2e2;
+  --color-primary-fixed-dim: #c6c6c7;
+  --color-on-primary-fixed: #1a1c1c;
+  --color-on-primary-fixed-variant: #454747;
+  --color-inverse-primary: #c6c6c7;
+
+  --color-tertiary: #5d5f5f;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #ffffff;
+  --color-on-tertiary-container: #747676;
+  --color-tertiary-fixed: #e2e2e2;
+  --color-tertiary-fixed-dim: #c6c6c7;
+  --color-on-tertiary-fixed: #1a1c1c;
+  --color-on-tertiary-fixed-variant: #454747;
+
+  --color-surface: #fbf9f8;
+  --color-surface-dim: #dcd9d9;
+  --color-surface-bright: #fbf9f8;
+  --color-surface-variant: #e4e2e1;
+  --color-surface-tint: #5d5f5f;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3f2;
+  --color-surface-container: #f0eded;
+  --color-surface-container-high: #eae8e7;
+  --color-surface-container-highest: #e4e2e1;
+  --color-inverse-surface: #303030;
+  --color-inverse-on-surface: #f3f0f0;
+
+  --color-on-surface: #1b1c1c;
+  --color-on-surface-variant: #444748;
+  --color-on-background: #1b1c1c;
+  --color-background: #fbf9f8;
+
+  --color-outline: #747878;
+  --color-outline-variant: #c4c7c8;
+
+  --color-error: #ba1a1a;
+  --color-on-error: #ffffff;
+  --color-error-container: #ffdad6;
+  --color-on-error-container: #93000a;
+
+  /* ── Spacing (para padding/margin/gap) ── */
+  --spacing-xs: 0.25rem; /* 4px  */
+  --spacing-sm: 0.75rem; /* 12px */
+  --spacing-md: 1.5rem; /* 24px */
+  --spacing-lg: 3rem; /* 48px */
+  --spacing-xl: 5rem; /* 80px */
+  --spacing-gutter: 1.5rem; /* 24px */
+
+  /* ── Max-width para contenedor ── */
+  --width-container-max: 1200px;
+
+  /* ── Border radius ── */
+  --radius-DEFAULT: 0.25rem;
+  --radius-lg: 0.5rem;
+  --radius-xl: 0.75rem;
+
+  /* ── Familias tipográficas ── */
+  --font-family-display: "Montserrat", sans-serif;
+  --font-family-headline-lg: "Montserrat", sans-serif;
+  --font-family-headline-md: "Montserrat", sans-serif;
+  --font-family-body-lg: "Work Sans", sans-serif;
+  --font-family-body-md: "Work Sans", sans-serif;
+  --font-family-label-md: "Work Sans", sans-serif;
+  --font-family-label-sm: "Work Sans", sans-serif;
+
+  /* ── Tamaños tipográficos ── */
+  --text-display: 3rem; /* 48px */
+  --text-headline-lg: 2rem; /* 32px */
+  --text-headline-lg-mobile: 1.5rem; /* 24px */
+  --text-headline-md: 1.5rem; /* 24px */
+  --text-body-lg: 1.125rem; /* 18px */
+  --text-body-md: 1rem; /* 16px */
+  --text-label-md: 0.875rem; /* 14px */
+  --text-label-sm: 0.75rem; /* 12px */
+}
+
+body {
+  background-color: #fbf9f8;
+  color: #1b1c1c;
+  overflow-x: hidden;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid #eeeeee;
+}
+
+.teal-glow {
+  box-shadow: 0 4px 20px rgba(45, 138, 138, 0.15);
+}
+
+.container-max {
+  max-width: 1200px;
+}
+@media (min-width: 768px) {
+  .hero {
+  width: 100%;
+  height: 100%;
+
+  background-image:
+    linear-gradient(#fefefee8, #fefefee8), url("/src/assets/portada-hero.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+}
+
