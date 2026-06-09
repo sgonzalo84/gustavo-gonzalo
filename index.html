@@ -5,11 +5,17 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Gustavo Gonzalo | Músico y Autor</title>
+
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&amp;family=Work+Sans:wght@400;500;600&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&amp;family=Work+Sans:wght@400;500;600&amp;display=swap"
       rel="stylesheet"
     />
     <!-- Material Symbols -->
@@ -33,41 +39,53 @@
           class="relative z-10 container-max mx-auto px-gutter grid grid-cols-1 md:grid-cols-12 gap-lg items-center"
         >
           <!-- Album Cover -->
-          <div class="md:col-span-6 relative group" data-aos="fade-right">
+          <div class="md:col-span-6 relative group">
             <div
               class="absolute -inset-4 bg-secondary/5 rounded-xl blur-3xl group-hover:bg-secondary/10 transition-colors"
             ></div>
             <img
               alt="Portada del disco 'En este preciso momento' de Gustavo Gonzalo"
               class="relative z-10 w-full aspect-square object-cover rounded-xl shadow-2xl"
-              src="/src/assets/portada-1200.webp"
+              src="/src/assets/cover-600.webp"
             />
           </div>
           <!-- Text Content -->
-          <div
-            class="md:col-span-6 space-y-3 md:space-y-md"
-            data-aos="fade-left"
-          >
+          <div class="md:col-span-6 space-y-3 md:space-y-md">
             <span
               class="inline-block px-sm py-xs bg-secondary/10 text-secondary rounded-full font-label-sm text-label-sm uppercase tracking-wider"
               >Nuevo Lanzamiento</span
             >
-            <h1 class="font-display text-display text-on-surface leading-tight">
+            <h1
+              class="font-headline-lg text-headline-lg text-on-surface leading-tight"
+            >
               Gustavo Gonzalo
             </h1>
-            <h2 class="font-headline-lg text-headline-lg text-secondary italic">
+            <h2
+              class="font-display text-display text-secondary leading-none md:leading-tight"
+            >
               En este preciso momento
             </h2>
+
             <p class="font-body-lg text-body-lg text-on-surface-variant">
-              Una exploración sonora de la presencia, el tiempo y la emoción.
-              Sumérgete en el viaje acústico de mi último trabajo discográfico.
+              Un álbum de 14 canciones, largo para los tiempos que corren, que
+              mezclan la canción de autor con una gran variedad de estilos,
+              desde la ranchera hasta el rocanrol, pasando por el pop y el folk.
+            </p>
+            <p class="font-body-lg text-body-lg text-on-surface-variant">
+              El disco es hijo de un periodo existencial muy intenso y de la
+              lucidez que da el devenir del tiempo y la inestimable ayuda de las
+              musas. En él, la música se da cita con la poesía, con la intención
+              de abrir una grieta en la cotidianeidad por la que entre brisa
+              fresca y suponga un alto en el camino en la vorágine de la
+              actualidad, invitando a la reflexión y apelando a la sensibilidad
+              e inteligencia del público.
             </p>
             <div class="flex flex-wrap gap-2 md:gap-sm pt-2 md:pt-sm">
               <a
                 href="https://open.spotify.com/album/4hD2sEZ9rmmhNWt4eVYBvp?si=uJckiRBdTiC_edE4l0ubUQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center gap-xs bg-secondary text-on-secondary px-4 py-2 md:py-4 rounded-full font-label-md text-label-md hover:opacity-90 active:scale-95 transition-all"
+                class="flex items-center gap-xs bg-secondary text-on-secondary px-4 py-2 md:py-3 rounded-full font-body-md text-body-md hover:opacity-90 active:scale-95 transition-all"
               >
                 <span
                   class="material-symbols-outlined"
@@ -81,7 +99,7 @@
                 href="https://music.amazon.es/albums/B0H3JKPGJQ"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center gap-xs border-2 border-secondary text-secondary px-4 py-2 md:py-4 rounded-full font-label-md text-label-md hover:bg-secondary/5 active:scale-95 transition-all"
+                class="flex items-center gap-xs border-2 border-secondary text-secondary px-4 py-2 md:py-3 rounded-full font-body-md text-body-md hover:bg-secondary/5 active:scale-95 transition-all"
               >
                 <span class="material-symbols-outlined">music_note</span>
                 Amazon Music
@@ -90,7 +108,7 @@
                 href="https://music.youtube.com/playlist?list=OLAK5uy_nU7mfA01SH2mwIC0Izo16-2euKGAiuwhs&si=doOAzr8qJtlQSxAc"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="flex items-center gap-xs border-2 border-secondary text-secondary px-4 py-2 md:py-4 rounded-full font-label-md text-label-md hover:bg-secondary/5 active:scale-95 transition-all"
+                class="flex items-center gap-xs border-2 border-secondary text-secondary px-4 py-2 md:py-3 rounded-full font-body-md text-body-md hover:bg-secondary/5 active:scale-95 transition-all"
               >
                 <span class="material-symbols-outlined">smart_display</span>
                 YouTube Music
@@ -101,28 +119,28 @@
       </section>
       <!-- Bento Grid: Featured Content -->
 
-      <section class="py-0 md:py-xl">
+      <section class="py-gutter md:py-xl bg-primary-container">
         <div class="container-max mx-auto px-gutter">
-          <div
+          <!-- <div
             class="bg-on-tertiary-fixed text-white p-0 md:p-lg rounded-xl flex flex-col justify-center items-center text-center"
+          > -->
+          <iframe
+            src="https://open.spotify.com/embed/album/4hD2sEZ9rmmhNWt4eVYBvp"
+            width="100%"
+            height="940"
+            frameborder="0"
+            allowfullscreen=""
+            allow="
+              autoplay;
+              clipboard-write;
+              encrypted-media;
+              fullscreen;
+              picture-in-picture;
+            "
+            loading="lazy"
           >
-            <iframe
-              src="https://open.spotify.com/embed/album/4hD2sEZ9rmmhNWt4eVYBvp"
-              width="100%"
-              height="420"
-              frameborder="0"
-              allowfullscreen=""
-              allow="
-                autoplay;
-                clipboard-write;
-                encrypted-media;
-                fullscreen;
-                picture-in-picture;
-              "
-              loading="lazy"
-            >
-            </iframe>
-          </div>
+          </iframe>
+          <!-- </div> -->
         </div>
       </section>
 
@@ -242,63 +260,52 @@
       </section> -->
 
       <!-- Contacto / Redes -->
-      <section class="py-xl" id="contacto">
-        <div class="max-w-[1200px] mx-auto px-gutter">
-          <div
-            class="grid grid-cols-1 md:grid-cols-3 gap-lg border-t border-outline-variant pt-xl"
-          >
-            <!-- Email -->
-            <a
-              href="mailto:gustavogonzalo74@gmail.com"
-              class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors"
-            >
-              <h3 class="font-headline-md text-headline-md text-on-surface">
-                Email
-              </h3>
+      <section class="" id="contacto">
+        <div class="py-xl">
+          <div class="container-max mx-auto px-gutter">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+              <a
+                href="mailto:gustavogonzalo74@gmail.com"
+                class="font-body-md text-body-md text-on-primary-container hover:text-primary-hover transition-colors"
+              >
+                <h3 class="font-headline-md text-headline-md">Email</h3>
+                gustavogonzalo74@gmail.com
+              </a>
 
-              gustavogonzalo74@gmail.com
-            </a>
+              <a
+                href="https://www.instagram.com/gustavogonzalomusica/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-body-md text-body-md text-on-primary-container hover:text-primary-hover transition-colors"
+              >
+                <h3 class="font-headline-md text-headline-md">Instagram</h3>
+                instagram.com/gustavogonzalomusica
+              </a>
 
-            <!-- Instagram -->
-            <a
-              href="https://www.instagram.com/gustavogonzalomusica/"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors"
-            >
-              <h3 class="font-headline-md text-headline-md text-on-surface">
-                Instagram
-              </h3>
-
-              instagram.com/gustavogonzalomusica
-            </a>
-
-            <!-- Spotify -->
-
-            <a
-              href="https://open.spotify.com/artist/3dbPal7rSuAJ2YbmbTs5ea"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="font-body-md text-body-md text-on-surface-variant hover:text-secondary transition-colors"
-            >
-              <h3 class="font-headline-md text-headline-md text-on-surface">
-                Spotify
-              </h3>
-              open.spotify.com/artist/3dbPal7rSuAJ2YbmbTs5ea
-            </a>
+              <a
+                href="https://www.youtube.com/@GustavoGonzalo-y6z"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="font-body-md text-body-md text-on-primary-container hover:text-primary-hover transition-colors"
+              >
+                <h3 class="font-headline-md text-headline-md">Youtube</h3>
+                youtube.com/@GustavoGonzalo-y6z
+              </a>
+            </div>
           </div>
         </div>
       </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-surface-container-low">
-      <div class="text-center w-full px-gutter py-lg container-max mx-auto">
+    <footer class="bg-inverse-surface">
+      <div class="text-center w-full px-gutter py-md container-max mx-auto">
         <div class="mb-md md:mb-0">
-          <span class="font-headline-md text-headline-md text-on-surface"
+          <span
+            class="font-headline-md text-headline-md text-inverse-on-surface"
             >Gustavo Gonzalo</span
           >
-          <p class="font-label-sm text-label-sm text-on-surface-variant mt-xs">
-            ©<span id="year"></span>. Gustavo Gonzalo.Todos los derechos
+          <p class="font-label-sm text-label-sm text-outline-variant mt-xs">
+            ©<span id="year"></span>Gustavo Gonzalo. Todos los derechos
             reservados.
           </p>
         </div>

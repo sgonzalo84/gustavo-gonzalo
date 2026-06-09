@@ -11,24 +11,16 @@
   --color-on-secondary-fixed: #002020;
   --color-on-secondary-fixed-variant: #004f50;
 
-  --color-primary: #5d5f5f;
-  --color-on-primary: #ffffff;
-  --color-primary-container: #ffffff;
-  --color-on-primary-container: #747676;
-  --color-primary-fixed: #e2e2e2;
-  --color-primary-fixed-dim: #c6c6c7;
-  --color-on-primary-fixed: #1a1c1c;
-  --color-on-primary-fixed-variant: #454747;
-  --color-inverse-primary: #c6c6c7;
-
-  --color-tertiary: #5d5f5f;
-  --color-on-tertiary: #ffffff;
-  --color-tertiary-container: #ffffff;
-  --color-on-tertiary-container: #747676;
-  --color-tertiary-fixed: #e2e2e2;
-  --color-tertiary-fixed-dim: #c6c6c7;
-  --color-on-tertiary-fixed: #1a1c1c;
-  --color-on-tertiary-fixed-variant: #454747;
+  --color-primary: #f4cba2;
+  --color-primary-hover: #b18150;
+  --color-on-primary: #2b1700;
+  --color-primary-container: #fcd5b0;
+  --color-on-primary-container: #4a3620; /* Ajustado para que contraste perfecto sobre el fondo claro */
+  --color-primary-fixed: #fdf6ee;
+  --color-primary-fixed-dim: #e4be96;
+  --color-on-primary-fixed: #4a3620;
+  --color-on-primary-fixed-variant: #5c3f1c;
+  --color-inverse-primary: #86531d;
 
   --color-surface: #fbf9f8;
   --color-surface-dim: #dcd9d9;
@@ -40,10 +32,10 @@
   --color-surface-container: #f0eded;
   --color-surface-container-high: #eae8e7;
   --color-surface-container-highest: #e4e2e1;
-  --color-inverse-surface: #303030;
+  --color-inverse-surface: #42424a;
   --color-inverse-on-surface: #f3f0f0;
 
-  --color-on-surface: #1b1c1c;
+  --color-on-surface: #42424a;
   --color-on-surface-variant: #444748;
   --color-on-background: #1b1c1c;
   --color-background: #fbf9f8;
@@ -73,13 +65,14 @@
   --radius-xl: 0.75rem;
 
   /* ── Familias tipográficas ── */
-  --font-family-display: "Montserrat", sans-serif;
-  --font-family-headline-lg: "Montserrat", sans-serif;
-  --font-family-headline-md: "Montserrat", sans-serif;
-  --font-family-body-lg: "Work Sans", sans-serif;
-  --font-family-body-md: "Work Sans", sans-serif;
-  --font-family-label-md: "Work Sans", sans-serif;
-  --font-family-label-sm: "Work Sans", sans-serif;
+
+  --font-display: "Caveat", cursive;
+  --font-headline-lg: "Work Sans", sans-serif;
+  --font-headline-md: "Work Sans", sans-serif;
+  --font-body-lg: "Work Sans", sans-serif;
+  --font-body-md: "Work Sans", sans-serif;
+  --font-label-md: "Work Sans", sans-serif;
+  --font-label-sm: "Work Sans", sans-serif;
 
   /* ── Tamaños tipográficos ── */
   --text-display: 3rem; /* 48px */
@@ -93,8 +86,8 @@
 }
 
 body {
-  background-color: #fbf9f8;
-  color: #1b1c1c;
+  background-color: var(--color-surface);
+  color:var(--color-on-surface);
   overflow-x: hidden;
 }
 
@@ -121,14 +114,14 @@ body {
 }
 @media (min-width: 768px) {
   .hero {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  background-image:
-    linear-gradient(#fefefee8, #fefefee8), url("/src/assets/portada-hero.webp");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+    background-image:
+      linear-gradient(#fefefee8, #fefefee8),
+      url("/src/assets/portada-hero.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 }
-}
-
