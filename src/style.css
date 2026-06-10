@@ -87,7 +87,7 @@
 
 body {
   background-color: var(--color-surface);
-  color:var(--color-on-surface);
+  color: var(--color-on-surface);
   overflow-x: hidden;
 }
 
@@ -112,14 +112,16 @@ body {
 .container-max {
   max-width: 1200px;
 }
+img {
+  max-width: 550px;
+}
+
 @media (min-width: 768px) {
   .hero {
     width: 100%;
     height: 100%;
-
     background-image:
-      linear-gradient(#fefefee8, #fefefee8),
-      url("/src/assets/portada-hero.webp");
+      linear-gradient(#fefefee8, #fefefee8), url("/src/assets/hero.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
