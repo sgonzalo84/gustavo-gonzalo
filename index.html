@@ -5,6 +5,10 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Gustavo Gonzalo | Música y poesía</title>
+    <meta
+      name="description"
+      content="Web oficial de Gustavo Gonzalo. Escucha su nuevo disco 'En este preciso momento' y descubre 'Décimas, sonetos y otras perversiones', su poemario ilustrado."
+    />
 
     <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -23,7 +27,7 @@
     <meta property="og:locale" content="es_ES" />
     <meta
       property="og:image"
-      content="https://gustavogonzalo.netlify.app/gg-vert-logo-white.webp"
+      content="https://gustavogonzalo.netlify.app/gg-share.webp"
     />
     <meta property="og:image:type" content="image/webp" />
     <meta property="og:image:height" content="512" />
@@ -33,16 +37,58 @@
     <meta property="og:title" content="Gustavo Gonzalo | Música y poesía" />
     <meta
       property="og:description"
-      content="Página dedicada a la música y la poesía de Gustavo Gonzalo"
+      content="Web oficial de Gustavo Gonzalo. Escucha su nuevo disco 'En este preciso momento' y descubre 'Décimas, sonetos y otras perversiones', su poemario ilustrado."
     />
     <meta property="og:url" content="https://gustavogonzalo.netlify.app/" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Gustavo Gonzalo | Música y poesía" />
     <meta
-      name="twitter:image"
-      content="https://gustavogonzalo.netlify.app/gg-vert-logo-white.webp"
+      property="twitter:description"
+      content="Web oficial de Gustavo Gonzalo. Escucha su nuevo disco 'En este preciso momento' y descubre 'Décimas, sonetos y otras perversiones', su poemario ilustrado."
     />
+    <meta
+      name="twitter:image"
+      content="https://gustavogonzalo.netlify.app/gg-share.webp"
+    />
+
+    <!-- Datos Estructurados Schema.org para Gustavo Gonzalo -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://gustavogonzalo.netlify.app",
+            "name": "Gustavo Gonzalo",
+            "jobTitle": "Cantautor y Escritor",
+            "url": "https://gustavogonzalo.netlify.app",
+            "description": "Cantautor y escritor español que fusiona la canción de autor con rock, folk y ranchera."
+          },
+          {
+            "@type": "MusicAlbum",
+            "@id": "https://gustavogonzalo.netlify.app/#disco",
+            "name": "En este preciso momento",
+            "byArtist": {
+              "@id": "https://gustavogonzalo.netlify.app"
+            },
+            "genre": ["Canción de autor", "Folk", "Rock", "Ranchera"],
+            "albumReleaseType": "AlbumRelease",
+            "numTracks": "14"
+          },
+          {
+            "@type": "Book",
+            "@id": "https://gustavogonzalo.netlify.app/#libro",
+            "name": "Décimas, sonetos y otras perversiones",
+            "author": {
+              "@id": "https://gustavogonzalo.netlify.app"
+            },
+            "bookFormat": "https://schema.org/Paperback",
+            "description": "Poemario ilustrado de Gustavo Gonzalo."
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body class="font-body-md text-body-md">
@@ -71,13 +117,26 @@
             <div
               class="absolute -inset-4 bg-secondary/5 rounded-xl blur-3xl group-hover:bg-secondary/10 transition-colors"
             ></div>
+
             <img
-              alt="Portada del disco 'En este preciso momento' de Gustavo Gonzalo"
               class="relative z-10 w-full aspect-square object-cover rounded-xl shadow-2xl"
               fetchpriority="high"
-              src="/src/assets/album-cover.webp"
-              width="452"
-              height="452"
+              srcset="
+                /src/assets/album-cover-388.webp   388w,
+                /src/assets/album-cover-452.webp   452w,
+                /src/assets/album-cover-550.webp   550w,
+                /src/assets/album-cover-904.webp   904w,
+                /src/assets/album-cover-1100.webp 1100w
+              "
+              sizes="
+                (max-width: 450px) min(100vw, 388px), 
+                (max-width: 768px) min(100vw, 550px), 
+                clamp(266px, 38vw, 452px)
+              "
+              src="/src/assets/album-cover-550.webp"
+              alt="Portada del disco 'En este preciso momento' de Gustavo Gonzalo"
+              width="550"
+              height="550"
             />
           </div>
           <!-- Text Content -->
@@ -133,6 +192,7 @@
                 src="/src/assets/spotify-logo.svg"
                 height="28"
                 width="102"
+                fetchpriority="high"
               />
             </a>
             <a
@@ -148,6 +208,7 @@
                 src="/src/assets/amazon-music-logo.svg"
                 height="28"
                 width="131"
+                fetchpriority="high"
               />
             </a>
             <a
@@ -163,6 +224,7 @@
                 src="/src/assets/youtube-music-logo.webp"
                 height="28"
                 width="93"
+                fetchpriority="high"
               />
             </a>
           </div>
@@ -171,23 +233,68 @@
 
       <section class="py-gutter md:py-xl bg-primary-container">
         <div class="container-max mx-auto px-gutter">
-          <iframe
-            title="Reproductor de Spotify del álbum 'En este preciso momento' de Gustavo Gonzalo"
-            src="https://open.spotify.com/embed/album/4hD2sEZ9rmmhNWt4eVYBvp"
-            width="100%"
-            height="940"
-            frameborder="0"
-            allowfullscreen=""
-            allow="
-              autoplay;
-              clipboard-write;
-              encrypted-media;
-              fullscreen;
-              picture-in-picture;
-            "
-            loading="lazy"
-          >
-          </iframe>
+          <div class="relative">
+            <!-- Skeleton -->
+            <div class="spotify-skeleton absolute inset-0">
+              <!-- Fila superior: imagen + líneas -->
+              <div
+                class="flex items-center gap-4 p-5 bg-[#53535a] rounded-t-xl"
+              >
+                <div
+                  class="size-38 shrink-0 rounded bg-neutral-400 animate-pulse"
+                ></div>
+                <div class="flex flex-col gap-2 flex-1">
+                  <div
+                    class="h-6 w-4/5 rounded bg-neutral-500 animate-pulse"
+                  ></div>
+                  <div
+                    class="h-4 w-1/2 rounded bg-neutral-500 animate-pulse"
+                  ></div>
+                  <div
+                    class="h-4 w-1/2 rounded bg-neutral-500 animate-pulse"
+                  ></div>
+                </div>
+              </div>
+              <!-- Filas de canciones -->
+              <div class="flex flex-col gap-4 p-4 bg-[#42424a]">
+                <div
+                  class="h-10 w-full rounded bg-neutral-500 animate-pulse"
+                ></div>
+                <div
+                  class="h-10 w-full rounded bg-neutral-500 animate-pulse"
+                ></div>
+                <div
+                  class="h-10 w-full rounded bg-neutral-500 animate-pulse"
+                ></div>
+                <div
+                  class="h-10 w-full rounded bg-neutral-500 animate-pulse"
+                ></div>
+                <div
+                  class="h-10 w-full rounded bg-neutral-500 animate-pulse"
+                ></div>
+                <div
+                  class="h-10 w-full rounded bg-neutral-500 animate-pulse"
+                ></div>
+              </div>
+            </div>
+
+            <!-- Iframe -->
+            <iframe
+              class="lazy-spotify opacity-0 transition-opacity duration-300"
+              title="Reproductor de Spotify del álbum 'En este preciso momento' de Gustavo Gonzalo"
+              data-src="https://open.spotify.com/embed/album/4hD2sEZ9rmmhNWt4eVYBvp"
+              width="100%"
+              height="940"
+              frameborder="0"
+              allow="
+                autoplay;
+                clipboard-write;
+                encrypted-media;
+                fullscreen;
+                picture-in-picture;
+              "
+            ></iframe>
+          </div>
         </div>
       </section>
 
@@ -235,9 +342,15 @@
                 alt="Portada del libro 'Décimas, sonetos y otras perversiones'"
                 class="relative z-10 w-full h-auto object-cover shadow-2xl"
                 loading="lazy"
-                src="/src/assets/book-cover.webp"
+                src="/src/assets/book-cover-desktop.webp"
+                srcset="
+                  /src/assets/book-cover-desktop.webp 352w,
+                  /src/assets/book-cover-mobile.webp  364w,
+                  /src/assets/book-cover-max.webp     617w
+                "
+                sizes="(max-width: 768px) 100vw, 352px"
                 width="352"
-                height="528"
+                height="507"
               />
             </div>
           </div>
@@ -254,7 +367,7 @@
                 class="font-body-md text-body-md text-on-primary-container hover:text-primary-hover transition-colors"
               >
                 <h3 class="font-headline-md text-headline-md">Email</h3>
-                gustavogonzalo74@gmail.com
+                gustavogonzalomusica@gmail.com
               </a>
 
               <a

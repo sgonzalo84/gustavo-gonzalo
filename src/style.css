@@ -84,6 +84,9 @@
   --text-label-md: 0.875rem; /* 14px */
   --text-label-sm: 0.75rem; /* 12px */
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: var(--color-surface);
