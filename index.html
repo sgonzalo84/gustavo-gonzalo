@@ -86,6 +86,16 @@
             "bookFormat": "https://schema.org/Paperback",
             "description": "Poemario ilustrado de Gustavo Gonzalo."
           }
+           {
+            "@type": "Book",
+            "@id": "https://gustavogonzalo.netlify.app/#homo-mascullante",
+            "name": "Homo mascullante",
+            "author": {
+              "@id": "https://gustavogonzalo.netlify.app"
+            },
+            "bookFormat": "https://schema.org/Paperback",
+            "description": "Primer poemario de Gustavo Gonzalo"
+          }
         ]
       }
     </script>
@@ -231,9 +241,14 @@
         </div>
       </section>
 
-      <section class="py-gutter md:py-xl bg-primary-container">
+      <section class="py-gutter md:py-xl bg-secondary-container">
         <div class="container-max mx-auto px-gutter">
           <div class="relative">
+            <h2
+              class="font-display text-display text-secondary leading-none md:leading-tight"
+            >
+              Escucha una muestra del album
+            </h2>
             <!-- Skeleton -->
             <div class="spotify-skeleton absolute inset-0">
               <!-- Fila superior: imagen + líneas -->
@@ -352,6 +367,64 @@
                 width="352"
                 height="507"
               />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-xl bg-primary-container" id="homo-mascullante">
+        <div class="container-max mx-auto px-gutter">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
+            <div
+              class="md:col-span-6 lg:col-span-4 flex justify-center min-w-0"
+            >
+              <img
+                alt="Portada del libro 'Homo mascullante'"
+                class="relative z-10 w-full h-auto object-cover shadow-2xl"
+                loading="lazy"
+                src="/src/assets/homo-mascullante-352.webp"
+                srcset="
+                  /src/assets/homo-mascullante-352.webp 352w,
+                  /src/assets/homo-mascullante-364.webp 364w,
+                  /src/assets/homo-mascullante-704.webp 704w
+                "
+                sizes="(max-width: 768px) 100vw, 352px"
+                width="352"
+                height="493"
+              />
+            </div>
+
+            <div class="md:col-span-6 lg:col-span-8 space-y-3 md:space-y-md">
+              <span
+                class="inline-block px-sm py-xs bg-secondary/10 text-secondary rounded-full font-label-sm text-label-sm uppercase tracking-wider"
+                >Poemario</span
+              >
+              <h2
+                class="font-display text-display text-secondary leading-none md:leading-tight"
+              >
+                Homo mascullante
+              </h2>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant mb-md"
+              >
+                Estos versos nos acercan al poeta de forma sutil y liviana unas
+                veces, y nos alejan y desgarran y golpean, con el estilo de un
+                boxeador sin guantes, otras.
+              </p>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant mb-md"
+              >
+                En definitiva, estas letras destilan otoños adolescentes y
+                amores de barrio, quejidos silentes y vaqueros rotos, canciones
+                de cuna y chaquetas de pana, frasquitos de oriente y aromas de
+                espuma, las Mil y una noches y 'I wish you were here'.
+              </p>
+              <p
+                class="font-body-lg text-body-lg text-on-surface-variant mb-md"
+              >
+                Desearía olvidar para siempre este tesoro oculto, que aglutina
+                poemas, alma y vida, para poder volver a descubrirlo.
+              </p>
             </div>
           </div>
         </div>
