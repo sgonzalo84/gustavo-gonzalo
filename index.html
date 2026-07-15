@@ -24,6 +24,10 @@
     />
     <link rel="stylesheet" href="/src/style.css" />
 
+    <meta
+      name="google-site-verification"
+      content="QWhpUrwG-GPbDzo29Y0QoKn59_iMEiFstQuYTNkFkCY"
+    />
     <meta property="og:locale" content="es_ES" />
     <meta
       property="og:image"
@@ -67,7 +71,7 @@
           },
           {
             "@type": "MusicAlbum",
-            "@id": "https://gustavogonzalo.netlify.app/#disco",
+            "@id": "https://gustavogonzalo.netlify.app/#en-este-preciso-momento",
             "name": "En este preciso momento",
             "byArtist": {
               "@id": "https://gustavogonzalo.netlify.app"
@@ -76,9 +80,20 @@
             "albumReleaseType": "AlbumRelease",
             "numTracks": "14"
           },
+           {
+            "@type": "MusicAlbum",
+            "@id": "https://gustavogonzalo.netlify.app/#aromas",
+            "name": "Aromas",
+            "byArtist": {
+              "@id": "https://gustavogonzalo.netlify.app"
+            },
+            "genre": ["Canción de autor", "Folk", "Rock"],
+            "albumReleaseType": "AlbumRelease",
+            "numTracks": "14"
+          },
           {
             "@type": "Book",
-            "@id": "https://gustavogonzalo.netlify.app/#libro",
+            "@id": "https://gustavogonzalo.netlify.app/#decimas-sonetos-y-otras-perversiones",
             "name": "Décimas, sonetos y otras perversiones",
             "author": {
               "@id": "https://gustavogonzalo.netlify.app"
@@ -105,7 +120,7 @@
     <main class="pt-0">
       <section
         class="relative min-h-screen flex flex-col justify-between"
-        id="disco"
+        id="en-este-preciso-momento"
       >
         <div class="absolute inset-0 z-0">
           <div class="hero"></div>
@@ -122,14 +137,13 @@
         <div
           class="relative z-10 container-max mx-auto px-gutter py-gutter grid grid-cols-1 md:grid-cols-12 gap-lg items-center"
         >
-          <!-- Album Cover -->
           <div class="md:col-span-5 relative flex justify-center">
             <div
               class="absolute -inset-4 bg-secondary/5 rounded-xl blur-3xl group-hover:bg-secondary/10 transition-colors"
             ></div>
 
             <img
-              class="relative z-10 w-full aspect-square object-cover rounded-xl shadow-2xl"
+              class="relative z-10 w-full aspect-square object-cover shadow-2xl"
               fetchpriority="high"
               srcset="
                 /src/assets/album-cover-388.webp   388w,
@@ -149,7 +163,7 @@
               height="550"
             />
           </div>
-          <!-- Text Content -->
+
           <div class="md:col-span-7 space-y-3 md:space-y-md">
             <span
               class="inline-block px-sm py-xs bg-secondary/10 text-secondary rounded-full font-label-sm text-label-sm uppercase tracking-wider"
@@ -194,7 +208,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Escuchar en Spotify"
-              class="flex grow min-w-45 items-center justify-center bg-secondary text-on-secondary px-4 py-2 md:py-3 rounded-full hover:-translate-y-1 transition-transform duration-300"
+              class="flex grow w-full md:w-auto items-center justify-center bg-secondary text-on-secondary px-8 py-4 rounded-full hover:-translate-y-1 transition-transform duration-300"
             >
               <img
                 alt="Logo de Spotify"
@@ -210,7 +224,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Escuchar en Amazon Music"
-              class="flex grow min-w-45 items-center justify-center gap-xs border-2 border-secondary text-secondary px-4 py-2 md:py-3 rounded-full hover:-translate-y-1 transition-transform duration-300"
+              class="flex grow w-full md:w-auto items-center justify-center gap-xs border-2 border-secondary text-secondary px-8 py-4 rounded-full hover:-translate-y-1 transition-transform duration-300"
             >
               <img
                 alt="Logo de Amazon Music"
@@ -226,7 +240,7 @@
               target="_blank"
               rel="noopener noreferrer"
               title="Escuchar en YouTube Music"
-              class="flex grow min-w-45 items-center justify-center gap-xs border-2 border-secondary text-secondary px-4 py-2 md:py-3 rounded-full hover:-translate-y-1 transition-transform duration-300"
+              class="flex grow w-full md:w-auto items-center justify-center gap-xs border-2 border-secondary text-secondary px-8 py-4 rounded-full hover:-translate-y-1 transition-transform duration-300"
             >
               <img
                 alt="Logo de YouTube Music"
@@ -241,7 +255,7 @@
         </div>
       </section>
 
-      <section class="py-gutter md:py-xl bg-secondary-container">
+      <!-- <section class="py-gutter md:py-xl bg-secondary-container">
         <div class="container-max mx-auto px-gutter">
           <div class="relative">
             <h2
@@ -249,9 +263,9 @@
             >
               Escucha una muestra del album
             </h2>
-            <!-- Skeleton -->
+            
             <div class="spotify-skeleton absolute inset-0">
-              <!-- Fila superior: imagen + líneas -->
+             
               <div
                 class="flex items-center gap-4 p-5 bg-[#53535a] rounded-t-xl"
               >
@@ -270,7 +284,6 @@
                   ></div>
                 </div>
               </div>
-              <!-- Filas de canciones -->
               <div class="flex flex-col gap-4 p-4 bg-[#42424a]">
                 <div
                   class="h-10 w-full rounded bg-neutral-500 animate-pulse"
@@ -293,7 +306,6 @@
               </div>
             </div>
 
-            <!-- Iframe -->
             <iframe
               class="lazy-spotify opacity-0 transition-opacity duration-300"
               title="Reproductor de Spotify del álbum 'En este preciso momento' de Gustavo Gonzalo"
@@ -311,11 +323,11 @@
             ></iframe>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <section
-        class="py-xl bg-surface-container-low overflow-hidden"
-        id="libro"
+        class="bg-secondary-container py-xl"
+        id="decimas-sonetos-y-otras-perversiones"
       >
         <div class="container-max mx-auto px-gutter">
           <div class="grid grid-cols-1 md:grid-cols-12 gap-lg items-center">
@@ -368,6 +380,80 @@
                 height="507"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="py-xl bg-surface-container-low overflow-hidden"
+        id="aromas"
+      >
+        <div
+          class="container-max mx-auto px-gutter py-gutter grid grid-cols-1 md:grid-cols-12 gap-lg items-center"
+        >
+          <div class="md:col-span-5 flex flex-col justify-center min-w-0">
+            <img
+              class="relative z-10 w-full object-cover shadow-2xl"
+              loading="lazy"
+              srcset="
+                /src/assets/cover-aromas-388.webp  388w,
+                /src/assets/cover-aromas-452.webp  452w,
+                /src/assets/cover-aromas-550.webp  550w,
+                /src/assets/cover-aromas-904.webp  904w,
+                /src/assets/cover-aromas.webp     1100w
+              "
+              sizes="
+                (max-width: 450px) min(100vw, 388px), 
+                (max-width: 768px) min(100vw, 550px), 
+                clamp(266px, 38vw, 452px)
+              "
+              src="/src/assets/cover-aromas-550.webp"
+              alt="Portada del disco 'Aromas' de Gustavo Gonzalo"
+              width="550"
+              height="520"
+            />
+
+            <a
+              class="flex justify-center gap-2 mt-lg text-secondary hover:text-surface-tint transition-colors duration-300 font-label-lg text-label-lg tracking-widest uppercase"
+              href="mailto:gustavogonzalomusica@gmail.com?subject=Quiero%20una%20copia%20del%20disco%20Aromas"
+            >
+              Solicitar copia física via email ➟
+            </a>
+          </div>
+
+          <div class="md:col-span-7 space-y-3 md:space-y-md">
+            <h2
+              class="font-display text-display text-secondary leading-none md:leading-tight mb-md"
+            >
+              Aromas
+            </h2>
+
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+              Hay discos que se adelantan a su época. Este es uno de ellos.
+              Realizado al alimón por Gustavo Gonzalo y Alfonso Arévalo, reúne
+              trece canciones que recorren territorios musicales muy distintos
+              sin perder una identidad propia. Su eclecticismo, lejos de
+              responder a una estrategia comercial, era la consecuencia natural
+              de una creatividad libre, ajena a etiquetas y tendencias. Quizá
+              por eso resultó difícil de comprender cuando apareció y, además,
+              tuvo una escasa distribución.
+            </p>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+              Hoy, décadas después, aquella aparente rareza revela su verdadero
+              valor. En una época en la que la mezcla de géneros es celebrada y
+              la autenticidad se ha convertido en un bien escaso, este álbum
+              emerge como el testimonio de una mirada artística singular
+              expresada con absoluta honestidad. Sus trece composiciones
+              dialogan entre el rock, el pop, el reggae, la canción de autor y
+              otras influencias con una libertad que entonces desconcertó y que
+              ahora resulta sorprendentemente contemporánea.
+            </p>
+            <p class="font-body-lg text-body-lg text-on-surface-variant mb-md">
+              Un disco que permaneció a la espera de encontrar el tiempo y los
+              oídos capaces de entenderlo. No está en ninguna plataforma
+              digital, por lo que si alguien está interesado en escucharlo que
+              pregunte por correo.
+            </p>
           </div>
         </div>
       </section>
